@@ -1,7 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/profile', (req, res) => { // on the browser it will be api/users/profile not /profile
+// @route   GET api/profile/test
+// @desc    Tests profile route
+// @access  Public
+
+router.get('/test', (req, res) => { // on the browser it will be api/profile/test not /test
     res.json({ msg: "Profile Works"});
 });
 
