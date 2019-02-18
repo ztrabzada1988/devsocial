@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require("mongoose"); // library to interact with mongodb
 const Schema = mongoose.Schema;
 
 // Create Schema

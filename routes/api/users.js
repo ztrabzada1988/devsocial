@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const gravatar = require("gravatar");
-const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
+const gravatar = require("gravatar"); // avatar maker
+const bcrypt = require("bcryptjs"); // hashing password
+const jwt = require("jsonwebtoken"); // token for authenthication
 const passport = require("passport");
 
 // Load user model
