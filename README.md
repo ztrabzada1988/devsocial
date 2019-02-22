@@ -6,3 +6,12 @@ Back End:
 - Express
 - Passport JS
 - JWT Auth.
+
+Front End:
+
+- REACT
+- Redux
+- Bootstrap
+- CSS
+- HTML
+- Material UI
