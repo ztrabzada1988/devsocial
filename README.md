@@ -18,3 +18,7 @@ Front End:
 - CSS
 - HTML
 - Material UI
+
+]Deployment
+
+- Heroku
