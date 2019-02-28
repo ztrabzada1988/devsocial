@@ -19,6 +19,8 @@ Front End:
 - HTML
 - Material UI
 
-]Deployment
+Deployment
 
 - Heroku
+- AWS
+- MongoDB
