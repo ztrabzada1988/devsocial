@@ -1,5 +1,13 @@
 const express = require("express");
 const router = express.Router();
+const mongoose = require('mongoose');
+const passport = require('passport');
+
+// Load Profile Model
+const Profile = require('../../models/Profile');
+// Load User Profile
+const User = require('../../models/User'); 
+
 
 // @route   GET api/profile/test
 // @desc    Tests profile route
@@ -8,14 +16,7 @@ const router = express.Router();
 router.get("/test", (req, res) => {
   // on the browser it will be api/profile/test not /test
   res.json({ msg: "Profile Works" });
-  passport.authenticate("jwt", { session: false }),
-    (req, res) => {
-      res.json({
-        id: req.user.id,
-        name: req.user.name,
-        email: req.user.email
-      });
-    };
+
 });
 
 module.exports = router;
