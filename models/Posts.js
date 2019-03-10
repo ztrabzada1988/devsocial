@@ -10,5 +10,35 @@ const PostsSchema = new Schema({
   name: {
     type: String,
     required: true
-  }
+  },
+
+  firstpost: [
+    {
+      title: {
+        type: String,
+        required: true
+      },
+      post: {
+        type: String,
+        required: true
+      },
+      location: {
+        type: String
+      },
+      from: {
+        type: Date,
+        required: true
+      },
+      to: {
+        type: Date
+      },
+      current: {
+        type: Boolean,
+        default: false
+      },
+      description: {
+        type: String
+      }
+    }
+  ]
 });
