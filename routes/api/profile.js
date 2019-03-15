@@ -44,10 +44,24 @@ router.get(
   "/",
   passport.authenticate("jwt", { session: false }),
   (req, res) => {
-    // Get fields 
+    // Get fields
     const profileFields = {};
     profileFields.user = req.user.id;
-    if(req.body.handle) profileFields.handle = req.body.handle
+    if (req.body.handle) profileFields.handle = req.body.handle;
+  }
+);
+
+// test
+// @route   POST api/profile/id
+// @desc    Create user profile
+// @access  Private
+router.get(
+  "/id:",
+  passport.authenticate("jwt", { session: false }),
+  (req, res) => {
+    // Get fields
+    const profileFields = {};
+    profileFields.user = req.user.id;
   }
 );
 
